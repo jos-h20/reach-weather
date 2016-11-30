@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// import Fetch from 'react-fetch';
-
 import LocationInput from './components/location_input';
 import ReturnedWeather from './components/returned_weather';
 
@@ -20,7 +18,6 @@ class App extends Component {
   }
 
   citySearch(city) {
-     city="Boston"
      return fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + API_KEY)
     .then((response) => response.json())
     .then((responseJson) => {
@@ -36,9 +33,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ReturnedWeather
-          weather={this.state.weather}
-        />
+        <LocationInput onSearchCityChange={city => this.citySearch(city)} />
+        <ReturnedWeather weather={this.state.weather} />
       </div>
     );
   }

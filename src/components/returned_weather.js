@@ -9,6 +9,7 @@ const ReturnedWeather = ({ weather }) => {
 
     <div className="weather-detail col-md-8">
       <div className="details">
+        <div>{weather.name}</div>
         <div>{weather.main.temp}</div>
         <div>{weather.weather[0].description}</div>
       </div>
