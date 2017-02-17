@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '6.0'
+install: npm install
+deploy:
+  provider: s3
+  access_key_id: AKIAI7TRSJKREEOEDFWQ
+  bucket: react-weather
+  region: us-west-2
+  secret_access_key:
+    secure: dgfxwUpfuBx6LBgTAOpssT5jIOoxgLHBtegidTH78I1spfQXfqPKQ6wd9EyX5J9q9ntp8q5RepYGI+BtBvz8D+3QPeGvLDSI79qYvc/A0OuRIA2atlS07aGuovswxPuo445ZjRRAo9akUJL6cePfUeZaIujaqFI08tDaIxe2wfbPmchPNMtwd6sJqRRIUbRSlbRXrR05btu7NnKN70ZJFxMM9MQtB8slTEzJMFGLs4MXL/kEFiQfUviB/FxmzLIiM0J6CWgs1m6ewxV1WFv7+eUl6fHvrnCcaMecAzDEeRPIKmvTTtojsj6JRwNbifBqdI5LcTqmv4nIk763D7IDS4k0ipAdEQRCKC3oXMiEaKZo6+lrZbZsCkjiY0osXZrNVw4Z/feATTPQuT8EXLX/7PWdc1uPnrObxqcK86AcvDD1rmhOhS/TuBDsd7STKeKnUmhEJ8NcchtpfGS4oH4A6MZ6D19IJSHaFvNqiSL//JNqrq5daJCHv+jf41VYUHqHtQN0tx9qixYqrbR6bQaXF2wMDFe/ih8LNd1uEsy8AaEkCrZP3IyJuIf1BUQ/JLR5GnUMXbBSW5iAsMAdnZwKPPdxJxWa99SydmZ7e1hnRFu4nqvCDgFATMT+Mq4MIuTDZSi/R77j9/ruPVDpg/jUK0YMkyTDJ9nG3djfFWo1wQ4=
